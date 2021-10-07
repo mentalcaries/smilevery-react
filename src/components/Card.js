@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 
 
 function Card(props){
@@ -10,7 +11,9 @@ function Card(props){
       <img className="card__image" src={props.image} alt="" onClick={handleClick} />
       <div className="card__items">
         <h2 className="card__title">{props.name}</h2>
+        <Link to={props.link}>
         <button className="card__order-button">{props.button}</button>
+        </Link>
       </div>
     </article>
   )
