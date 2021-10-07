@@ -4,7 +4,7 @@ function PopupWithForm({isOpen, onOutsideClick, onClose, onSubmit}) {
 
 
   return (
-    <div className={`popup popup_type_edit-card popup_opened${isOpen ? 'popup_opened' : ''} 
+    <div className={`popup popup_type_edit-card ${isOpen ? 'popup_opened' : ''} 
     `}>
       <div className="popup__overlay" onClick={onOutsideClick}>
         <div className="popup__container">

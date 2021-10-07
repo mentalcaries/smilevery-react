@@ -2,7 +2,8 @@
   max-width: 1100px;
   padding-top: 40px;
   padding-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
   margin: 0 auto;
-  background-color: grey;
   font-family: 'Quattrocento', 'Arial';
 }

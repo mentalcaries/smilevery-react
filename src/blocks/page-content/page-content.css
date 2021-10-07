@@ -1,6 +1,4 @@
-.page-content{  
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-around;
-
+.page-content{
+  width: 100%;
+  padding-left: 30px;
 }

@@ -11,24 +11,33 @@ import PopupWithForm from "./PopupWithForm";
 import Footer from "./Footer";
 
 
-function App(){
-  return(
+function App() {
+  return (
 
     <div className="App">
       <div className="root">
-          <Header/>
-        <div className="page-content">
+        <Header />
+        <div className="page">
 
-          <NavBar/>
-          <div>
-          <Location/>
-          <Shop/>
-          <Templates/>
-          <Designer/>
-
-<PopupWithForm/>
+          <NavBar className="navbar"/>
+          <div className="page-content">
+            <Switch>
+              <Route exact path="/">
+              <Location />
+              </Route>
+              <Route path="/shop">
+              <Shop />
+              </Route>
+              <Route path="/templates">
+              <Templates />
+              </Route>
+              <Route path="/designer">
+              <Designer />
+              </Route>
+            </Switch>
+            <PopupWithForm />
           </div>
-<Footer/>
+          <Footer />
         </div>
       </div>
     </div>
