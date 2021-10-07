@@ -1,0 +1,13 @@
+.designer__button{
+  width: 255px;
+  height: 42px;
+  background: #DD3E42;
+  border-radius: 8px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  color: white;
+  cursor: pointer;
+  border: 0;
+}

@@ -1,0 +1,11 @@
+.menu__item {
+  width: 255px;
+  height: 60px;
+  left: 0px;
+  background: #B2D2C7;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  color: #191B1E;
+}

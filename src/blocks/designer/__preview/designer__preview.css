@@ -1,0 +1,8 @@
+.designer__preview{
+  background-color: #FFFDEF;
+  max-width: 825px;
+  min-height: 445px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 35px;
+}

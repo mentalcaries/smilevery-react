@@ -1,13 +1,41 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@import url(./vendor/normalize.css);
+@import url(./vendor/fonts/fonts.css);
+@import url(./blocks/root/root.css);
+@import url(./blocks/page-content/page-content.css);
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+/* Menu */
+@import url(./blocks/menu/menu.css);
+@import url(./blocks/menu/__item/menu__item.css);
+@import url(./blocks/menu/__item/_active/menu__item_active.css);
+
+
+@import url(./blocks/selector/__text/selector__text.css);
+@import url(./blocks/selector/__title/selector__title.css);
+@import url(./blocks/selector/__partners/selector__partners.css);
+
+
+@import url(./blocks/card/card.css);
+@import url(./blocks/card/__items/card__items.css);
+@import url(./blocks/card/__image/card__image.css);
+@import url(./blocks/card/__title/card__title.css);
+@import url(./blocks/card/__order-button/card__order-button.css);
+
+
+
+@import url(./blocks/location/__title/location__title.css);
+@import url(./blocks/location/__text/location__text.css);
+@import url(./blocks/location/__map/location__map.css);
+
+
+@import url(./blocks/designer/__preview/designer__preview.css);
+@import url(./blocks/designer/__buttons/designer__buttons.css);
+@import url(./blocks/designer/__button/designer__button.css);
+@import url(./blocks/designer/__title/designer__title.css);
+
+@import url(./blocks/postcard/postcard.css);
+@import url(./blocks/postcard/__text/postcard__text.css);
+@import url(./blocks/postcard/__receiver/postcard__receiver.css);
+@import url(./blocks/postcard/__body/postcard__body.css);
+@import url(./blocks/postcard/__sender/postcard__sender.css);
+
+/* @import url(); */

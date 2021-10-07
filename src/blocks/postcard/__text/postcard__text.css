@@ -1,0 +1,9 @@
+.postcard__text{
+ border: 1px red solid;
+ display: flex;
+ width: 75%;
+ margin: 0 auto;
+ flex-direction: column; 
+ position: relative;
+ top: 125px;
+}

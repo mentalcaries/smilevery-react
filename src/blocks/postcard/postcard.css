@@ -1,0 +1,10 @@
+.postcard{
+  background-image: url('../../images/cardbackground.png');
+  background-repeat: no-repeat;
+  max-width: 565px;
+  min-height: 360px;
+  position: relative;
+  margin: 0 auto;
+  
+
+}
