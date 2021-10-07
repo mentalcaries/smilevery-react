@@ -1,10 +1,14 @@
 .postcard{
-  background-image: url('../../images/cardbackground.png');
+  background-image: url('../../images/card-paper.png');
   background-repeat: no-repeat;
-  max-width: 565px;
-  min-height: 360px;
+  background-position: center;
+  background-size: 80%;
+  background-clip: border-box;
+  max-width: 100%;
+  min-height: 400px;
   position: relative;
   margin: 0 auto;
-  
+  padding-left: 10px;
+  padding-right: 10px;
 
 }

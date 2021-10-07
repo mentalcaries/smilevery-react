@@ -1,9 +1,14 @@
-.postcard__text{
- border: 1px red solid;
- display: flex;
- width: 75%;
- margin: 0 auto;
- flex-direction: column; 
- position: relative;
- top: 125px;
+.postcard__text {
+  border: 1px red solid;
+  display: flex;
+  width: 33%;
+  height: 50%;
+  margin: 0 auto;
+  flex-direction: column;
+  position: relative;
+  top: 100px;
+  left: 30px;
+  font-size: 18px;
+  line-height: 26px;
+  text-shadow: 2px 2px 2px #cecece;
 }
