@@ -1,0 +1,24 @@
+.popup__title {
+  font-family: 'Oregano','Arial';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 64px;
+  margin: 0;
+  padding: 0px 36px;
+  margin-top: 34px;
+  margin-bottom: 54px;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 580px) {
+  .popup__title {
+    max-width: 238px;
+    font-size: 18px;
+    line-height: 22px;
+    padding: 0 22px;
+    margin-top: 25px;
+    margin-bottom: 76px;
+    
+  }
+}

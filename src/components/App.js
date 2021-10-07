@@ -7,6 +7,8 @@ import Shop from "./Shop";
 import Templates from "./Templates";
 import Designer from "./Designer";
 import Confirmation from "./Confirmation";
+import PopupWithForm from "./PopupWithForm";
+import Footer from "./Footer";
 
 
 function App(){
@@ -17,15 +19,16 @@ function App(){
           <Header/>
         <div className="page-content">
 
-          <NavBar/><div>
+          <NavBar/>
+          <div>
           <Location/>
           <Shop/>
           <Templates/>
           <Designer/>
 
+<PopupWithForm/>
           </div>
-
-
+<Footer/>
         </div>
       </div>
     </div>
