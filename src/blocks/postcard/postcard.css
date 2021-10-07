@@ -4,7 +4,7 @@
   background-position: center;
   background-size: 80%;
   background-clip: border-box;
-  max-width: 100%;
+  width: 100%;
   min-height: 400px;
   position: relative;
   margin: 0 auto;

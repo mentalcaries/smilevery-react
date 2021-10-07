@@ -1,10 +1,10 @@
 .postcard__text {
-  border: 1px red solid;
-  display: flex;
+
+  /* display: flex; */
   width: 33%;
   height: 50%;
   margin: 0 auto;
-  flex-direction: column;
+  /* flex-direction: column; */
   position: relative;
   top: 100px;
   left: 30px;

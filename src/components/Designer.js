@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 
-function Designer({onEditClick, selectedCard}) {
+function Designer({onEditClick, selectedCard, postcard}) {
 
   return (
     <div >
@@ -9,13 +9,11 @@ function Designer({onEditClick, selectedCard}) {
       <div class="designer__preview">
         <div className="postcard"  style={{backgroundImage:`url('${selectedCard}')`}}>
           <div className="postcard__text">
-            <p className="postcard__receiver">Dear John</p>
+            <p className="postcard__receiver">{postcard.recipient}</p>
             <p className="postcard__body">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Molestias aut, repellat ipsum facere voluptate dicta obcaecati
-              deserunt nobis suscipit eaque?{' '}
+              {postcard.message}
             </p>
-            <p className="postcard__sender">Love Mary</p>
+            <p className="postcard__sender">{postcard.sender}</p>
           </div>
         </div>
       </div>

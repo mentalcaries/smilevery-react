@@ -1,8 +1,33 @@
 import React from 'react';
 
 function PopupWithForm({isOpen, onOutsideClick, onClose, onSubmit}) {
+  const [recipientName, setRecipientName] = React.useState('');
+  const [message, setMessage] = React.useState('');
+  const [senderName, setSenderName] = React.useState('');
+
+  function handleRecipientNameChange(evt) {
+    setRecipientName(evt.target.value);
+   
+  }
+
+  function handleMessageChange(evt) {
+    setMessage(evt.target.value);
+  }
+
+  function handleSenderNameChange(evt) {
+    setSenderName(evt.target.value);
+  }
+
+  function handleSubmit(evt) {
+    evt.preventDefault();
+    onSubmit({
+      recipient: recipientName,
+      message,
+      sender: senderName,
+    });
+  }
+
   return (
-    
     <div
       className={`popup popup_type_edit-card ${isOpen ? 'popup_opened' : ''} 
     `}
@@ -19,13 +44,13 @@ function PopupWithForm({isOpen, onOutsideClick, onClose, onSubmit}) {
             className="popup__form"
             name="Edit Card"
             noValidate
-            onSubmit={onSubmit}
+            onSubmit={handleSubmit}
           >
             <input
               type="text"
               name="to"
               id="popup_to"
-              // onChange={handleNameChange}
+              onChange={handleRecipientNameChange}
               placeholder="Enter Receipient's Name"
               className={`popup__field `}
               minLength="2"
@@ -40,7 +65,7 @@ function PopupWithForm({isOpen, onOutsideClick, onClose, onSubmit}) {
               name="title"
               id="popup_title"
               // value={description || ''}
-              // onChange={handleDescriptionChange}
+              onChange={handleMessageChange}
               placeholder="Write a note with love"
               className={`popup__field popup__field_body`}
               minLength="2"
@@ -54,7 +79,7 @@ function PopupWithForm({isOpen, onOutsideClick, onClose, onSubmit}) {
               name="title"
               id="popup_title"
               // value={description || ''}
-              // onChange={handleDescriptionChange}
+              onChange={handleSenderNameChange}
               placeholder="Your Name"
               className={`popup__field `}
               minLength="2"

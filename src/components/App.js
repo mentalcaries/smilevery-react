@@ -13,21 +13,42 @@ import Footer from "./Footer";
 function App() {
   const [selectedCard, setSelectedCard] = React.useState("");
   const [isEditPopupOpen, setIsEditPopupOpen]= React.useState(false)
-  const [cardText, setCardText]= React.useState("")  
+  const [postcardText, setPostcardText]= React.useState("")  
 
 
   function handleCardSelect(clickedCard) {
     setSelectedCard(clickedCard);
   }
-  console.log(selectedCard)
 
   function handleEditTextClick(){
-    console.log("click")
     setIsEditPopupOpen(true)
   }
 
   function closePopups(){
     setIsEditPopupOpen(false)
+    document.removeEventListener('keydown', handleEscape)
+  }
+
+  function handleTextSubmit(postcard){
+    setPostcardText(postcard)
+    closePopups();
+  }
+
+  if (isEditPopupOpen) {
+    document.addEventListener('keydown', handleEscape)
+  }
+
+  function handleEscape(evt) {
+    if (evt.key === "Escape") {
+      closePopups();
+      
+    }
+  }
+
+  function handleOutsideClick(evt) {
+    if (evt.target.className === "popup__overlay") {
+      closePopups()
+    }
   }
 
   return (
@@ -48,13 +69,13 @@ function App() {
                 <Templates onCardSelect={handleCardSelect} card={selectedCard}/>
               </Route>
               <Route path="/designer">
-                <Designer selectedCard={selectedCard.image} onEditClick={handleEditTextClick}/>
+                <Designer selectedCard={selectedCard.image} onEditClick={handleEditTextClick} postcard={postcardText}/>
               </Route>
               <Route path="/confirm">
               <Confirmation />
               </Route>
             </Switch>
-            <PopupWithForm isOpen={isEditPopupOpen}/>
+            <PopupWithForm onSubmit={handleTextSubmit} isOpen={isEditPopupOpen} onClose={closePopups} onOutsideClick={handleOutsideClick}/>
           </div>
           <Footer />
         </div>
