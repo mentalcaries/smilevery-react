@@ -8,7 +8,7 @@ function Template({onCardSelect}) {
     <div>
       <h2 className="selector__title">Creating a Postcard</h2>
       <p className="selector__text">
-        We managed to find these shops at the destination place
+      Almost there! Choose a template for your postcard
       </p>
       <section className="selector__partners">
         <DesignCard image={paperCard} name="Paper" onCardSelect={onCardSelect} button="Select" />

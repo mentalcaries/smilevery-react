@@ -32,7 +32,7 @@ function App() {
 
   function closePopups() {
     setIsEditPopupOpen(false);
-    setisConfirmPopupOpen(false)
+    setisConfirmPopupOpen(false);
     document.removeEventListener('keydown', handleEscape);
   }
 
@@ -69,19 +69,19 @@ function App() {
           <NavBar className="navbar" />
           <div className="page-content">
             <Switch>
-              <Route exact path="/">
+              <Route exact path="/smilevery-react/">
                 <Location />
               </Route>
-              <Route path="/shop">
+              <Route path="/smilevery-react/shop">
                 <Shop />
               </Route>
-              <Route path="/templates">
+              <Route path="/smilevery-react/templates">
                 <Templates
                   onCardSelect={handleCardSelect}
                   card={selectedCard}
                 />
               </Route>
-              <Route path="/designer">
+              <Route path="/smilevery-react/designer">
                 <Designer
                   selectedCard={selectedCard.image}
                   onEditClick={handleEditTextClick}
@@ -89,8 +89,11 @@ function App() {
                   onGenerateCanvas={handleGeneratedCanvas}
                 />
               </Route>
-              <Route path="/confirm">
-                <Confirmation postcardCanvas={postcardCanvas} onConfirmClick={handleConfirmclick}/>
+              <Route path="/smilevery-react/confirm">
+                <Confirmation
+                  postcardCanvas={postcardCanvas}
+                  onConfirmClick={handleConfirmclick}
+                />
               </Route>
             </Switch>
             <PopupWithForm

@@ -7,7 +7,6 @@ function PopupWithForm({isOpen, onOutsideClick, onClose, onSubmit}) {
 
   function handleRecipientNameChange(evt) {
     setRecipientName(evt.target.value);
-   
   }
 
   function handleMessageChange(evt) {
@@ -55,7 +54,6 @@ function PopupWithForm({isOpen, onOutsideClick, onClose, onSubmit}) {
               className={`popup__field `}
               minLength="2"
               maxLength="50"
-              // ref={nameRef}
               autoComplete="off"
               required
             />
@@ -64,13 +62,11 @@ function PopupWithForm({isOpen, onOutsideClick, onClose, onSubmit}) {
               type="text"
               name="title"
               id="popup_title"
-              // value={description || ''}
               onChange={handleMessageChange}
               placeholder="Write a note with love"
               className={`popup__field popup__field_body`}
               minLength="2"
               maxLength="200"
-              // ref={descriptionRef} autoComplete="off"
               required
             />
 
@@ -78,13 +74,11 @@ function PopupWithForm({isOpen, onOutsideClick, onClose, onSubmit}) {
               type="text"
               name="title"
               id="popup_title"
-              // value={description || ''}
               onChange={handleSenderNameChange}
               placeholder="Your Name"
               className={`popup__field `}
               minLength="2"
               maxLength="200"
-              // ref={descriptionRef} autoComplete="off"
               required
             />
 

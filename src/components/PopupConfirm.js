@@ -3,8 +3,8 @@ import {Link} from 'react-router-dom';
 function PopupConfirm({isOpen, onClose, onOutsideClick}) {
   return (
     <div
-      className={`popup popup_type_confirm ${isOpen ? 'popup_opened' : ''} 
-  `}
+      className={`popup popup_type_edit-card ${isOpen ? 'popup_opened' : ''} 
+    `}
     >
       <div className="popup__overlay" onClick={onOutsideClick}>
         <div className="popup__container">
@@ -13,25 +13,41 @@ function PopupConfirm({isOpen, onClose, onOutsideClick}) {
             type="button"
             onClick={onClose}
           ></button>
-          <div className="popup__items">
-            <h2 className="popup__title">Success!</h2>
+          <h2 className="popup__title">Your Smilevery Code</h2>
+          <form
+            className="popup__form"
+            name="Edit Card"
+            noValidate
+            // onSubmit={handleSubmit}
+          >
+            <input
+              type="text"
+              name="to"
+              id="popup_to"
+              placeholder="Your Smilevery Code"
+              className={`popup__field `}
+              minLength="2"
+              maxLength="50"
+              autoComplete="off"
+              required
+            />
             <p className="popup__text">
-              Your postcard was received by the shop and will be delivered
-              shortly!
+              The code was automatically copied to your clipboard.
             </p>
-            <p className="popup__text">Great work!</p>
-          </div>
-          <Link style={{maxWidth: 'maxContent'}} to="/">
+            <p className="popup__text">
+              Don’t close this window until we inform you the postcard is
+              received by our partner online-shop
+            </p>
+
             <button
-              className={`popup__save-btn popup__save-btn_type-confirm`}
+              className={`popup__save-btn`}
               type="submit"
               name="Save"
               default="Save"
-              onClick={onClose}
             >
-              Deliver One More Smile
+              Save
             </button>
-          </Link>
+          </form>
         </div>
       </div>
     </div>

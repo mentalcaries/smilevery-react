@@ -34,10 +34,10 @@ function Designer({onEditClick, selectedCard, postcard, onGenerateCanvas}) {
         <button className="designer__button" onClick={onEditClick}>
           Edit Text
         </button>
-        <Link to="/templates">
+        <Link to="/smilevery-react/templates">
           <button className="designer__button">Pick Another Template</button>
         </Link>
-        <Link to="/confirm">
+        <Link to="/smilevery-react/confirm">
           <button className="designer__button" onClick={generateCanvas}>
             Finish
           </button>

@@ -15,7 +15,7 @@ function DesignCard(props) {
       />
       <div className="card__items">
         <h2 className="card__title">{props.name}</h2>
-        <Link to="/designer">
+        <Link to="/smilevery-react/designer">
           <button className="card__order-button" onClick={handleClick}>
             {props.button}
           </button>

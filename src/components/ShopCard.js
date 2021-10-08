@@ -9,7 +9,7 @@ function Card(props){
       <img className="card__image" src={props.image} alt=""  />
       <div className="card__items">
         <h2 className="card__title">{props.name}</h2>
-        <Link to="/templates">
+        <Link to="/smilevery-react/templates">
         <button className="card__order-button">{props.button}</button>
         </Link>
       </div>

@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom'
 
 function Header(){
   return(
-    <Link to="/">
+    <Link to="/smilevery-react/">
     <img className="header__logo" alt="Smilevery Logo" src={headerLogo}/>
     </Link>
 
