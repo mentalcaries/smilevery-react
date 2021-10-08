@@ -41,11 +41,11 @@ function PopupConfirm({isOpen, onClose, onOutsideClick}) {
 
             <button
               className={`popup__save-btn`}
-              type="submit"
+              onClick={onClose}
               name="Save"
               default="Save"
             >
-              Save
+              Go Shopping
             </button>
           </form>
         </div>
