@@ -12,6 +12,8 @@ There are three basic designs but this will be expanded in the future to include
 
 The simple card editor overlays the text message on the images and generates the card.
 
+The image is generated with the external library HTML2Canvas which used the contents of the postcard in the DOM to create a PNG.
+
 At this point, the app will create a code that the user can use on the partner's site. Future options would include having the card automatically forwarded to the merchant.
 
 ### Future Plans
@@ -24,5 +26,5 @@ For touch input devices, a handwriting field may be added for an even more perso
 
 ### Team arrayOfLight
 
-UI/UX Design: Lina Khazova
-Developers: Eduard Loktev && Devin Jaggernauth
+**UI/UX Design** Lina Khazova
+**Developers** Eduard Loktev && Devin Jaggernauth
