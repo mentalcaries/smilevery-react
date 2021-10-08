@@ -13,7 +13,6 @@ export default function Map() {
   };
 
   return (
-    // Important! Always set the container height explicitly
     <div style={{height: '50vh', width: '100%'}}>
       <GoogleMapReact
         bootstrapURLKeys={{key: 'AIzaSyDtVnre6-I5BHmKL0-e3DSpzhfPZb3X7wg'}}
