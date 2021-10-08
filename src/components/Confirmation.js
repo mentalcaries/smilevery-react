@@ -1,7 +1,10 @@
+import {useHistory} from 'react-router-dom'
+
 function Confirmation({postcardCanvas, onConfirmClick}) {
 
-  
-  return (
+  const history = useHistory();
+
+    return (
     <div>
       <h2 className="designer__title">Confirmation</h2>
       <p className="designer__text">Click “Confirm” if you’re happy with the final result and “Back” if you’d like to make changes. </p>
@@ -13,7 +16,7 @@ function Confirmation({postcardCanvas, onConfirmClick}) {
           Confirm
         </button>
 
-        <button className="designer__button">Back to Editing</button>
+        <button className="designer__button" onClick={()=>history.goBack()}>Back to Editing</button>
       </div>
     </div>
   );

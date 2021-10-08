@@ -1,3 +1,4 @@
+import {Link} from 'react-router-dom';
 
 function PopupConfirm({isOpen, onClose, onOutsideClick}) {
   return (
@@ -23,7 +24,7 @@ function PopupConfirm({isOpen, onClose, onOutsideClick}) {
               type="text"
               name="to"
               id="popup_to"
-              placeholder="Your Smilevery Code"
+              placeholder="SJ39XJ"
               className={`popup__field `}
               minLength="2"
               maxLength="50"
@@ -37,15 +38,16 @@ function PopupConfirm({isOpen, onClose, onOutsideClick}) {
               Don’t close this window until we inform you the postcard is
               received by our partner online-shop
             </p>
-
-            <button
-              className={`popup__save-btn`}
-              onClick={onClose}
-              name="Save"
-              default="Save"
-            >
-              Go Shopping
-            </button>
+            <Link Link to="/smilevery-react/shop">
+              <button
+                className={`popup__save-btn`}
+                onClick={onClose}
+                name="Save"
+                default="Save"
+              >
+                Go Shopping
+              </button>
+            </Link>
           </form>
         </div>
       </div>

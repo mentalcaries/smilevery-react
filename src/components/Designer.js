@@ -32,7 +32,7 @@ function Designer({onEditClick, selectedCard, postcard, onGenerateCanvas}) {
       </div>
       <div className="designer__buttons">
         <button className="designer__button" onClick={onEditClick}>
-          Edit Text
+          Add Some Text
         </button>
         <Link to="/smilevery-react/templates">
           <button className="designer__button">Pick Another Template</button>

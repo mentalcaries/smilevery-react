@@ -1,6 +1,6 @@
 import ShopCard from "./ShopCard";
 import Flowers from "../images/Flowers.png";
-import Clothes from "../images/Clothes.png";
+import Candy from "../images/Candy.png";
 import Pizza from "../images/Pizza.png";
 
 function Shop() {
@@ -13,7 +13,7 @@ function Shop() {
       <section className="selector__partners">
         <ShopCard image={Pizza} name="Gigi's Pizza" button="Order Here" />
         <ShopCard image={Flowers} name="Petal's Flowers" button="Order Here" />
-        <ShopCard image={Clothes} name="Lina's Fashions" button="Order Here" />
+        <ShopCard image={Candy} name="Lina's Candies" button="Order Here" />
       </section>
     </div>
   );
