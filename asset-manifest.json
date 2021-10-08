@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/smilevery-react/static/css/main.5b906b59.chunk.css",
-    "main.js": "/smilevery-react/static/js/main.43216328.chunk.js",
-    "main.js.map": "/smilevery-react/static/js/main.43216328.chunk.js.map",
+    "main.js": "/smilevery-react/static/js/main.16529fb0.chunk.js",
+    "main.js.map": "/smilevery-react/static/js/main.16529fb0.chunk.js.map",
     "runtime-main.js": "/smilevery-react/static/js/runtime-main.743c87a5.js",
     "runtime-main.js.map": "/smilevery-react/static/js/runtime-main.743c87a5.js.map",
     "static/js/2.74554ad3.chunk.js": "/smilevery-react/static/js/2.74554ad3.chunk.js",
@@ -23,6 +23,6 @@
     "static/js/runtime-main.743c87a5.js",
     "static/js/2.74554ad3.chunk.js",
     "static/css/main.5b906b59.chunk.css",
-    "static/js/main.43216328.chunk.js"
+    "static/js/main.16529fb0.chunk.js"
   ]
 }
