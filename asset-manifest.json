@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/smilevery-react/static/css/main.da316096.chunk.css",
+    "main.js": "/smilevery-react/static/js/main.7248bf8c.chunk.js",
+    "main.js.map": "/smilevery-react/static/js/main.7248bf8c.chunk.js.map",
+    "runtime-main.js": "/smilevery-react/static/js/runtime-main.743c87a5.js",
+    "runtime-main.js.map": "/smilevery-react/static/js/runtime-main.743c87a5.js.map",
+    "static/js/2.8f666213.chunk.js": "/smilevery-react/static/js/2.8f666213.chunk.js",
+    "static/js/2.8f666213.chunk.js.map": "/smilevery-react/static/js/2.8f666213.chunk.js.map",
+    "static/js/3.78837784.chunk.js": "/smilevery-react/static/js/3.78837784.chunk.js",
+    "static/js/3.78837784.chunk.js.map": "/smilevery-react/static/js/3.78837784.chunk.js.map",
+    "index.html": "/smilevery-react/index.html",
+    "static/css/main.da316096.chunk.css.map": "/smilevery-react/static/css/main.da316096.chunk.css.map",
+    "static/js/2.8f666213.chunk.js.LICENSE.txt": "/smilevery-react/static/js/2.8f666213.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/smilevery-react/static/media/quattrocento-v12-latin-regular.b66b8744.woff2",
+    "static/media/Clothes.be86b4b7.png": "/smilevery-react/static/media/Clothes.be86b4b7.png",
+    "static/media/Flowers.82d8a1a6.png": "/smilevery-react/static/media/Flowers.82d8a1a6.png",
+    "static/media/Pizza.ffa59122.png": "/smilevery-react/static/media/Pizza.ffa59122.png",
+    "static/media/card-animal.d2fc7ad6.png": "/smilevery-react/static/media/card-animal.d2fc7ad6.png",
+    "static/media/card-floral.225f257c.png": "/smilevery-react/static/media/card-floral.225f257c.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.743c87a5.js",
+    "static/js/2.8f666213.chunk.js",
+    "static/css/main.da316096.chunk.css",
+    "static/js/main.7248bf8c.chunk.js"
+  ]
+}
