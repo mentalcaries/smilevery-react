@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/smilevery-react/static/css/main.5b906b59.chunk.css",
-    "main.js": "/smilevery-react/static/js/main.790e5fb8.chunk.js",
-    "main.js.map": "/smilevery-react/static/js/main.790e5fb8.chunk.js.map",
+    "main.js": "/smilevery-react/static/js/main.38fc6403.chunk.js",
+    "main.js.map": "/smilevery-react/static/js/main.38fc6403.chunk.js.map",
     "runtime-main.js": "/smilevery-react/static/js/runtime-main.3ce74401.js",
     "runtime-main.js.map": "/smilevery-react/static/js/runtime-main.3ce74401.js.map",
-    "static/js/2.dc099c44.chunk.js": "/smilevery-react/static/js/2.dc099c44.chunk.js",
-    "static/js/2.dc099c44.chunk.js.map": "/smilevery-react/static/js/2.dc099c44.chunk.js.map",
+    "static/js/2.6db3b637.chunk.js": "/smilevery-react/static/js/2.6db3b637.chunk.js",
+    "static/js/2.6db3b637.chunk.js.map": "/smilevery-react/static/js/2.6db3b637.chunk.js.map",
     "static/js/3.4f777f11.chunk.js": "/smilevery-react/static/js/3.4f777f11.chunk.js",
     "static/js/3.4f777f11.chunk.js.map": "/smilevery-react/static/js/3.4f777f11.chunk.js.map",
     "index.html": "/smilevery-react/index.html",
     "static/css/main.5b906b59.chunk.css.map": "/smilevery-react/static/css/main.5b906b59.chunk.css.map",
-    "static/js/2.dc099c44.chunk.js.LICENSE.txt": "/smilevery-react/static/js/2.dc099c44.chunk.js.LICENSE.txt",
+    "static/js/2.6db3b637.chunk.js.LICENSE.txt": "/smilevery-react/static/js/2.6db3b637.chunk.js.LICENSE.txt",
+    "static/media/Candy.fc5ecd81.png": "/smilevery-react/static/media/Candy.fc5ecd81.png",
     "static/media/index.css": "/smilevery-react/static/media/quattrocento-v12-latin-regular.b66b8744.woff2",
-    "static/media/Clothes.be86b4b7.png": "/smilevery-react/static/media/Clothes.be86b4b7.png",
     "static/media/Flowers.82d8a1a6.png": "/smilevery-react/static/media/Flowers.82d8a1a6.png",
     "static/media/Pizza.ffa59122.png": "/smilevery-react/static/media/Pizza.ffa59122.png",
     "static/media/card-animal.d2fc7ad6.png": "/smilevery-react/static/media/card-animal.d2fc7ad6.png",
@@ -21,8 +21,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.3ce74401.js",
-    "static/js/2.dc099c44.chunk.js",
+    "static/js/2.6db3b637.chunk.js",
     "static/css/main.5b906b59.chunk.css",
-    "static/js/main.790e5fb8.chunk.js"
+    "static/js/main.38fc6403.chunk.js"
   ]
 }
