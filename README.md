@@ -24,6 +24,8 @@ The location page should show participating merchant stores near or around the r
 
 For touch input devices, a handwriting field may be added for an even more personal touch.
 
+##View website here:## https://mentalcaries.github.io/smilevery-react/
+
 ## Smilevery
 
 ### Team arrayOfLight
