@@ -1,5 +1,5 @@
 .designer__button{
-  width: 255px;
+  min-width: 255px;
   height: 42px;
   background: #DD3E42;
   border-radius: 8px;
@@ -10,4 +10,17 @@
   color: white;
   cursor: pointer;
   border: 0;
+}
+
+@media screen and (max-width: 1140px) {
+  .designer__button {
+  min-width: 180px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .designer__button {
+  min-width: 140px;
+  font-size: 14px;
+  line-height: 12px
+  }
 }

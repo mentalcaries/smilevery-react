@@ -18,6 +18,8 @@ At this point, the app will create a code that the user can use on the partner's
 
 ### Future Plans
 
+Responsive Design! 
+
 The location page should show participating merchant stores near or around the recipient (especially if in another country) via use of Google Maps.
 
 For touch input devices, a handwriting field may be added for an even more personal touch.
