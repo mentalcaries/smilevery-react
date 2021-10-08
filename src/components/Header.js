@@ -1,8 +1,11 @@
 import headerLogo from '../images/logo.png'
+import {Link} from 'react-router-dom'
 
 function Header(){
   return(
-    <img className="header__logo" src={headerLogo}/>
+    <Link exact to="/">
+    <img className="header__logo" alt="Smilevery Logo" src={headerLogo}/>
+    </Link>
 
   )
 }

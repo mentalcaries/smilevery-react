@@ -1,28 +1,47 @@
+// import html2canvas from 'html2canvas';
 import React from 'react';
 import {Link} from 'react-router-dom';
+import html2canvas from 'html2canvas';
 
-function Designer({onEditClick, selectedCard, postcard}) {
+function Designer({onEditClick, selectedCard, postcard, onGenerateCanvas}) {
+  const postcardRef = React.useRef();
+
+  function generateCanvas() {
+    html2canvas(postcardRef.current)
+    .then((canvas)=> {
+      return onGenerateCanvas(canvas);
+    });
+  }
+
 
   return (
-    <div >
+    <div>
       <h2 className="designer__title">Customise Your Card</h2>
       <div class="designer__preview">
-        <div className="postcard"  style={{backgroundImage:`url('${selectedCard}')`}}>
+        <div
+          className="postcard"
+          style={{backgroundImage: `url('${selectedCard}')`}}
+          ref={postcardRef}
+        >
           <div className="postcard__text">
             <p className="postcard__receiver">{postcard.recipient}</p>
-            <p className="postcard__body">
-              {postcard.message}
-            </p>
+            <p className="postcard__body">{postcard.message}</p>
             <p className="postcard__sender">{postcard.sender}</p>
           </div>
         </div>
       </div>
       <div className="designer__buttons">
-        <button className="designer__button" onClick={onEditClick}>Edit Text</button>
+        <button className="designer__button" onClick={onEditClick}>
+          Edit Text
+        </button>
         <Link to="/templates">
           <button className="designer__button">Pick Another Template</button>
         </Link>
-        <button className="designer__button">Finish</button>
+        <Link to="/confirm">
+          <button className="designer__button" onClick={generateCanvas}>
+            Finish
+          </button>
+        </Link>
       </div>
     </div>
   );

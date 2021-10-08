@@ -60,7 +60,7 @@ function PopupWithForm({isOpen, onOutsideClick, onClose, onSubmit}) {
               required
             />
 
-            <input
+            <textarea
               type="text"
               name="title"
               id="popup_title"
