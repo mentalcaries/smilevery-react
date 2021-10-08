@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom'
 
 function Header(){
   return(
-    <Link exact to="/">
+    <Link to="/">
     <img className="header__logo" alt="Smilevery Logo" src={headerLogo}/>
     </Link>
 

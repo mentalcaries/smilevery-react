@@ -1,23 +1,23 @@
-// import html2canvas from 'html2canvas';
+
 import React from 'react';
 import {Link} from 'react-router-dom';
 import html2canvas from 'html2canvas';
+
+
 
 function Designer({onEditClick, selectedCard, postcard, onGenerateCanvas}) {
   const postcardRef = React.useRef();
 
   function generateCanvas() {
-    html2canvas(postcardRef.current)
-    .then((canvas)=> {
-      return onGenerateCanvas(canvas);
+    html2canvas(postcardRef.current).then((canvas) => {
+      onGenerateCanvas(canvas)
     });
   }
-
 
   return (
     <div>
       <h2 className="designer__title">Customise Your Card</h2>
-      <div class="designer__preview">
+      <div className="designer__preview">
         <div
           className="postcard"
           style={{backgroundImage: `url('${selectedCard}')`}}

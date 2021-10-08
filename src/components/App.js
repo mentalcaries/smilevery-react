@@ -9,13 +9,14 @@ import Designer from './Designer';
 import Confirmation from './Confirmation';
 import PopupWithForm from './PopupWithForm';
 import Footer from './Footer';
-
+import PopupConfirm from './PopupConfirm';
 
 function App() {
   const [selectedCard, setSelectedCard] = React.useState('');
   const [isEditPopupOpen, setIsEditPopupOpen] = React.useState(false);
+  const [isConfirmPopupOpen, setisConfirmPopupOpen] = React.useState(false);
   const [postcardText, setPostcardText] = React.useState('');
-  const [postcardCanvas, setPostcardCanvas] = React.useState('')
+  const [postcardCanvas, setPostcardCanvas] = React.useState('');
 
   function handleCardSelect(clickedCard) {
     setSelectedCard(clickedCard);
@@ -25,8 +26,13 @@ function App() {
     setIsEditPopupOpen(true);
   }
 
+  function handleConfirmclick() {
+    setisConfirmPopupOpen(true);
+  }
+
   function closePopups() {
     setIsEditPopupOpen(false);
+    setisConfirmPopupOpen(false)
     document.removeEventListener('keydown', handleEscape);
   }
 
@@ -50,14 +56,10 @@ function App() {
       closePopups();
     }
   }
-  console.log(postcardCanvas)
 
-  function handleGeneratedCanvas(canvas){
-    setPostcardCanvas(canvas)
-    console.log(canvas)
+  function handleGeneratedCanvas(canvas) {
+    setPostcardCanvas(canvas.toDataURL());
   }
-console.log(postcardCanvas)
-
 
   return (
     <div className="App">
@@ -88,12 +90,17 @@ console.log(postcardCanvas)
                 />
               </Route>
               <Route path="/confirm">
-                <Confirmation onSetCanvas={postcardCanvas}/>
+                <Confirmation postcardCanvas={postcardCanvas} onConfirmClick={handleConfirmclick}/>
               </Route>
             </Switch>
             <PopupWithForm
               onSubmit={handleTextSubmit}
               isOpen={isEditPopupOpen}
+              onClose={closePopups}
+              onOutsideClick={handleOutsideClick}
+            />
+            <PopupConfirm
+              isOpen={isConfirmPopupOpen}
               onClose={closePopups}
               onOutsideClick={handleOutsideClick}
             />

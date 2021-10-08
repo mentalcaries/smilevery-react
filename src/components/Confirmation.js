@@ -1,14 +1,15 @@
-function Confirmation({postcardCanvas}) {
-  
+function Confirmation({postcardCanvas, onConfirmClick}) {
+
   
   return (
     <div>
       <h2 className="designer__title">Confirmation</h2>
-      <div class="designer__preview">
-        <img src={postcardCanvas} alt="" />
+      <p className="designer__text">Click “Confirm” if you’re happy with the final result and “Back” if you’d like to make changes. </p>
+      <div className="designer__preview">
+        <img className="designer__postcard" src={postcardCanvas} alt="" />
       </div>
       <div className="designer__buttons">
-        <button className="designer__button" >
+        <button className="designer__button" onClick={onConfirmClick} >
           Confirm
         </button>
 
