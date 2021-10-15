@@ -1,0 +1,10 @@
+.header__text{
+    margin:0;
+    font-family: 'Oregano', 'Arial';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 54px;
+    line-height: 64px;
+    text-align: center;
+    align-self: center;
+}

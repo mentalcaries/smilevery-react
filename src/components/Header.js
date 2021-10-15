@@ -5,11 +5,15 @@ import {Link} from 'react-router-dom'
 
 function Header(){
   return(
-    <div>
+    <div className="header__items">
     <Link to="/smilevery-react/">
     <img className="header__logo" alt="Smilevery Logo" src={headerLogo}/>
     </Link>
-     
+     <div className="header__group">
+       <h2 className="header__text">Send a Smile!</h2>
+       <img className="header__image" src={gift}/>
+       {/* <img className="header__image" src={love}/> */}
+     </div>
     </div>
 
 

@@ -5,7 +5,11 @@
 @import url(./blocks/page-content/page-content.css);
 @import url(./blocks/navbar/navbar.css);
 
+@import url(./blocks/header/__items/header__items.css);
 @import url(./blocks/header/__logo/header__logo.css);
+@import url(./blocks/header/__image/header__image.css);
+@import url(./blocks/header/__group/header__group.css);
+@import url(./blocks/header/__text/header__text.css);
 
 /* Menu */
 @import url(./blocks/menu/menu.css);
